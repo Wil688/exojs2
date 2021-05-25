@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 2</title>
+</head>
+<body>
+  <form>
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname"/>
+  </form>
+  <script>
+    // Methode es5
+      document.getElementById("lastname").addEventListener("blur", function() {
+        alert("Merci de votre participation");
+      });
+      //Methode es6 Achraf
+      /* Méthode Irfane */
+      /* var inputLastName = document.getElementById("lastname");
+
+      inputLastName.addEventListener("blur", function(){
+        alert("Merci de votre participation")
+      }) */
+
+      /* Methode Rachida */
+      /* var champs = document.querySelector("input");
+          champs.onblur=loseFocus;
+          function loseFocus () {
+              alert("Merci de votre participation");
+          } */
+  </script>
+</body>
+</html>
